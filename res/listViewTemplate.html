@@ -1,0 +1,87 @@
+<!-- New markers available: ###NEWS_SUBHEADER### and ###IMAGE###
+these can be set in the NEWSSDF_LISTITEM; added by Clemens Riccabona, Riccabona eSolutions
+ -->
+
+
+<!--
+    ############################################################################
+	MAIN TEMPLATE IT WILL ENGLOBE THE OTHERS
+	Markers available:
+	###HEADER###
+	###BODY###
+
+	############################################################################
+-->
+
+<!-- ###NEWSSDF_LISTVIEW### begin-->
+		<div class="newsSdf_listBody">
+			<div class="newsSdf_listHeader">
+				###HEADER###
+			</div>
+			###BODY###
+		</div>
+<!-- ###NEWSSDF_LISTVIEW### end-->
+
+<!--
+    ############################################################################
+	DISPLAY SINGLE ITEM ON LISTVIEW ( LIST )
+	Markers available:
+	###URL###
+	###TITLE###
+	###TARGET###
+	###DATETIME###
+	###STARTENDATE### : display the start date ( and the last date if exists ). Use the locallang value DateToDate to create the array of date.
+	###TITLE###
+	###IMAGE###
+	###NEWS_SUBHEADER###
+
+	############################################################################
+-->
+
+<!-- ###NEWSSDF_LISTITEM### begin-->	
+		<div class="newsSdf_listItem">
+			<a href="###URL###" title="###TITLE###" target="###TARGET###">###STARTENDATE### -  ###TITLE###</a>
+			<div class="newsSdf_listItem_image"> ###IMAGE### </div>
+			<div class="newsSdf_listItem_subheader"> ###NEWS_SUBHEADER### </div>
+
+		</div>
+<!-- ###NEWSSDF_LISTITEM### end-->
+
+<!--
+    ############################################################################
+	DISPLAY SINGLE ITEM ON LISTVIEW ( LISTINTERVAL )
+	Markers available:
+	###URL###
+	###TITLE###
+	###TARGET###
+	###DATETIME###
+	###TITLE###
+	###IMAGE###
+	###NEWS_SUBHEADER###
+
+	############################################################################
+-->
+
+<!-- ###NEWSSDF_LISTITEM_INTERVAL### begin-->
+		<div class="newsSdf_listItem">
+			<a href="###URL###" title="###TITLE###" target="###TARGET###">###TITLE###</a>
+			<div class="newsSdf_listItem_image"> ###IMAGE### </div>
+			<div class="newsSdf_listItem_subheader"> ###NEWS_SUBHEADER### </div>
+
+		</div>
+<!-- ###NEWSSDF_LISTITEM_INTERVAL### end-->
+
+<!--
+    ############################################################################
+	HEADER FOR DAY IN LISTVIEW TYPE INTERVAL
+	Markers available:
+	###HEADER###
+
+	############################################################################
+-->
+
+<!-- ###NEWSSDF_LISTVIEW_ITEM_HEADER### begin-->
+		<div class="newsSdf_listItemHeader">
+			###HEADER###
+		</div>
+<!-- ###NEWSSDF_LISTVIEW_ITEM_HEADER### end-->
